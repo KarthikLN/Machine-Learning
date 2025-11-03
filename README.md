@@ -23,7 +23,7 @@ DATA ANALYSIS:
 * Pandas 
 * Numpy 
 * Matplotlib
-* Plotly(Creating an Interactive Visualisation)
+* Plotly(Creating an Interactive Visualisation).
 
 Before Working on the data. we have to check few feature engineering Features.
 
