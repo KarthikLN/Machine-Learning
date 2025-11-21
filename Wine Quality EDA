@@ -68,4 +68,17 @@ plt.xlabel("Wine Quality")
 plt.ylabel("Count")
 plt.show()
 
+for column in df.columns:
+    sns.histplot(df[column],kde=True)
+
+sns.histplot(df['alcohol'])
+
+#univariate,bivariate,multivariate analysis
+sns.pairplot(df)
+
+##categorical Plot
+sns.catplot(x='quality', y='alcohol', data=df, kind="box")
+
+sns.scatterplot(x='alcohol',y='pH',hue='quality',data=df)
+
 
