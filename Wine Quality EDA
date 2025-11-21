@@ -56,10 +56,12 @@ df.drop_duplicates(inplace=True)
 ## Correlation between the independent and dependent variables
 df.corr()
 
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 plt.figure(figsize=(10,6))
 sns.heatmap(df.corr(),annot=True)
+https://github.com/user-attachments/assets/97423eed-f94e-4d84-ac39-aee9c145c951 
 
 ## Visualization
 #conclusion- It is an imbalanced dataset
@@ -67,11 +69,14 @@ df.quality.value_counts().plot(kind='bar')
 plt.xlabel("Wine Quality")
 plt.ylabel("Count")
 plt.show()
+https://github.com/user-attachments/assets/ec08215b-4844-4789-b13b-815f62fe0c58
 
 for column in df.columns:
     sns.histplot(df[column],kde=True)
+https://github.com/user-attachments/assets/d69e2e59-552a-4605-bb70-9d4d3b2b213c
 
 sns.histplot(df['alcohol'])
+https://github.com/user-attachments/assets/cecedc5c-53bf-4d5b-942a-50c458ff82a4
 
 #univariate,bivariate,multivariate analysis
 sns.pairplot(df)
@@ -80,5 +85,4 @@ sns.pairplot(df)
 sns.catplot(x='quality', y='alcohol', data=df, kind="box")
 
 sns.scatterplot(x='alcohol',y='pH',hue='quality',data=df)
-
-
+https://github.com/user-attachments/assets/b8edfb55-875b-418f-a0e8-9bb97bc985c6
